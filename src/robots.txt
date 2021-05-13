@@ -1,5 +1,8 @@
 # www.robotstxt.org
 
+User-agent: ia_archiver
+Disallow: /
+
 # Allow crawling of all content
 User-agent: *
 Disallow: 
