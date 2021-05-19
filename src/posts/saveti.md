@@ -1,6 +1,6 @@
 ---
-title: "Saveti"
-date: 2021-05-14T00:00
+title: Saveti
+date: 2021-05-19T11:10:20.060Z
 ---
 
 Ako brava ili cilindar zapinju, teško otvarate vrata, pozovite bravara da bi se na vreme sanirao kvar.
