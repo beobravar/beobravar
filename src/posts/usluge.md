@@ -1,13 +1,6 @@
 ---
 title: Usluge
-date: 2021-05-20T17:35:55.160Z
+date: 2021-05-19T11:10:00.000Z
 ---
-Dežurni bravar u Beogradu radi:
-
-* Otvaranje, popravka i zamena brava i cilindara.
-* Promena šifre.
-* Ugradnja svih vrsta brava.
-* Otvaranje automobila.
-* Otvaranje zalupljenih vrata kuće, stana.
-
-Sve sa najmanjom cenom usluga.
+Dežurni bravar u Beogradu vrši otvaranje, popravku i zamenu brava i cilindara, promenu šifre i ugradnju svih vrsta brava. Otvaramo i automobile. Sve sa najmanjom cenom usluga.
+Zalupili ste vrata kuće, stana, automobila? Pozovite nas.
