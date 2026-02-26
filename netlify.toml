@@ -1,29 +1,29 @@
 [build]
-    command = "npm run build"
-    publish = "dist"
+  command = "npm run build"
+  publish = "dist"
 
 [context.production.environment]
-    NODE_ENV = "production"
+  NODE_ENV = "production"
 
 [template.environment]
-    META_TITLE = "the title of your site"
-    META_URL = "the full url, e.g. 'https://emergency-site.dev'"
-    META_DESC = "a short description of your site"
-    META_LANG = "the language, e.g. 'en', 'de', ..."
-    META_COLOR = "the primary color hex code, e.g. '#FF0000'"
-    META_EMAIL = "the main contact email address"
-    META_TELEPHONE = "the main contact phone number"
-    # TZ = "the timezone for your site, e.g. America/New_York"
+  META_TITLE = "DEŽURNI BRAVAR - BEOGRAD | HITNE INTERVENCIJE"
+  META_URL = "https://www.beobravar.rs"
+  META_DESC = "Hitne bravarske usluge u Beogradu – otvaranje vrata, zamena brava i cilindara 24/7."
+  META_LANG = "sr"
+  META_COLOR = "#FF0000"
+  META_EMAIL = "beobravar@gmail.com"
+  META_TELEPHONE = "+381644000880"
+  # TZ = "Europe/Belgrade"
 
 [[headers]]
-    for = "/*"
-    [headers.values]
-        X-Frame-Options = "DENY"
-        X-XSS-Protection = "1; mode=block"
-        X-Content-Type-Options = "nosniff"
-        Referrer-Policy= "no-referrer-when-downgrade"
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
 
-# Force HTTPS + www
+# Force HTTPS + www + Latinica + ćirilica
 
 [[redirects]]
   from = "http://beobravar.rs/*"
@@ -44,18 +44,19 @@
   force = true
 
 [[redirects]]
-  from = "http://xn--90aebbbdr9a.xn--90a3ac/*"
+  from = "http://xn--80aabagp7drd.xn--90a3ac/*"
   to = "https://www.beobravar.rs/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://xn--90aebbbdr9a.xn--90a3ac/*"
+  from = "https://xn--80aabagp7drd.xn--90a3ac/*"
   to = "https://www.beobravar.rs/:splat"
   status = 301
   force = true
 
+# Catch-all 404, mora biti poslednji
 [[redirects]]
-    from = "*"
-    to = "/404"
-    status = 404
+  from = "*"
+  to = "/404"
+  status = 404
