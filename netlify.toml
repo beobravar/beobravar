@@ -23,6 +23,38 @@
         X-Content-Type-Options = "nosniff"
         Referrer-Policy= "no-referrer-when-downgrade"
 
+# Force HTTPS + www
+
+[[redirects]]
+  from = "http://beobravar.rs/*"
+  to = "https://www.beobravar.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://beobravar.rs/*"
+  to = "https://www.beobravar.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.beobravar.rs/*"
+  to = "https://www.beobravar.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://xn--90aebbbdr9a.xn--90a3ac/*"
+  to = "https://www.beobravar.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://xn--90aebbbdr9a.xn--90a3ac/*"
+  to = "https://www.beobravar.rs/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
     from = "*"
     to = "/404"
