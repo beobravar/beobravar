@@ -27,21 +27,21 @@ module.exports = function (config) {
         config.addFilter(filterName, filters[filterName])
     })
 
-    // Transform
+    // Transforms
     Object.keys(transforms).forEach((transformName) => {
         config.addTransform(transformName, transforms[transformName])
     })
 
-    // Markdown
+    // Markdown – sa uklanjanjem # sa naslova
     const mdlib = markdownIt({
         html: true,
         breaks: true,
         linkify: true,
         typographer: true
     }).use(markdownItAnchor, {
-        permalink: true,
+        permalink: true,         // zadrži anchor link za SEO
         permalinkClass: 'anchor',
-        permalinkSymbol: '#'
+        permalinkSymbol: ""      // uklanja znak # sa prikaza
     })
     config.setLibrary('md', mdlib)
 
