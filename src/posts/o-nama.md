@@ -1,6 +1,6 @@
 ---
 title: O nama
-date: 2021-05-19T11:09:44.276Z
+date: 2026-02-27T21:48:10.827Z
 ---
 Dežurni bravar u Beogradu sa dugogodišnjim iskustvom u hitnim intervencijama i ugradnji sigurnosnih sistema. Naš cilj je brza reakcija, profesionalan pristup i dugoročno bezbedno rešenje za vaše objekte.
 
