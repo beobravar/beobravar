@@ -1,5 +1,14 @@
 backend:
   name: git-gateway
+  branch: main
+
+# DODAJ OVO:
+local_backend: false
+
+# ovo dodaj:
+identity:
+  allowed_roles:
+    - admin
 
 publish_mode: editorial_workflow
 
