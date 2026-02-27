@@ -1,6 +1,6 @@
 ---
 title: Bravarske usluge u Beogradu
-date: 2025-12-03T07:42:02.050Z
+date: 2026-02-27T21:45:45.088Z
 ---
 Kao iskusni bravari u Beogradu, pružamo kompletne bravarske usluge za stanove, kuće, poslovne prostore i vozila.
 
