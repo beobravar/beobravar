@@ -10,12 +10,12 @@ const {
 } = process.env
 
 module.exports = {
-    title: META_TITLE || 'Emergency Site',
-    url: META_URL || '',
-    description: META_DESC || 'An emergency information website.',
-    lang: META_LANG || 'en',
-    primaryColor: META_COLOR || '#DB0000',
-    email: META_EMAIL || undefined,
-    telephone: META_TELEPHONE || undefined,
+    title: META_TITLE || 'Beo Bravar | Dežurni bravar Beograd 00-24',
+    url: META_URL || 'https://www.beobravar.rs',
+    description: META_DESC || 'Dežurni bravar u Beogradu za hitne intervencije. Otvaranje vrata, zamena brava i cilindara, promena ključa kasa brave i otključavanje automobila. Pozovite 064 4000 880.',
+    lang: META_LANG || 'sr',
+    primaryColor: META_COLOR || '#B30000',
+    email: META_EMAIL || 'beobravar@gmail.com',
+    telephone: META_TELEPHONE || '+381644000880',
     dateFormat: 'dd LLLL yyyy'
 }
