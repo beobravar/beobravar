@@ -1,6 +1,7 @@
 ---
 title: O nama
 date: 2026-02-27T21:52:21.015Z
+description: "Hitne bravarske usluge u Beogradu – otvaranje vrata, zamena brava i cilindara, otključavanje automobila 24/7."
 ---
 # 👤 Pouzdana bravarska podrška u Beogradu
 
