@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ meta.lang }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{%- if title -%}{{ title }} | {{ meta.title }}{%- else -%}{{ meta.title }}{%- endif -%}</title>
-        
-        {%- set css -%}{% include "inline-css.njk" %}{%- endset -%}
-        <style>{{ css | cssmin | safe }}</style>
+    {# Title #}
+    <title>{%- if title -%}{{ title }} | {{ meta.title }}{%- else -%}{{ meta.title }}{%- endif -%}</title>
 
-        {% include "meta.njk" %}
-    </head>
-    <body class="site">
-        {% include "notification.njk" %}
+    {# Meta Description / Open Graph #}
+    <meta name="description" content="{{ meta.description }}">
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ meta.title }}{% endif %}">
+    <meta property="og:description" content="{{ meta.description }}">
+    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="{{ meta.primaryColor }}">
 
-        {% include "header.njk" %}
-        <main class="main">{{ content | safe }}</main>
-        {% include "footer.njk" %}
+    {# Favicon i manifest #}
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" href="/static/images/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/static/images/favicon/android-chrome-512x512.png" sizes="512x512">
 
-        {% if build.env === 'production' %}
-        <script src="{{ '/static/scripts/offline.js' | url }}" async defer></script>
-        {% endif %}
-    </body>
+    {# Inline CSS #}
+    {%- set css -%}{% include "inline-css.njk" %}{%- endset -%}
+    <style>{{ css | cssmin | safe }}</style>
+
+    {# Dodatni meta elementi (ako ih ima) #}
+    {% include "meta.njk" %}
+</head>
+<body class="site">
+    {% include "notification.njk" %}
+
+    {% include "header.njk" %}
+    <main class="main">{{ content | safe }}</main>
+    {% include "footer.njk" %}
+
+    {% if build.env === 'production' %}
+    <script src="{{ '/static/scripts/offline.js' | url }}" async defer></script>
+    {% endif %}
+</body>
 </html>
