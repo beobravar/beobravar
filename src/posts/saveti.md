@@ -1,6 +1,7 @@
 ---
 title: Saveti iz prakse – brava i sigurnost vrata
 date: 2021-05-19T11:10:20.060Z
+description: "Hitne bravarske usluge u Beogradu – otvaranje vrata, zamena brava i cilindara, otključavanje automobila 24/7."
 ---
 ## 🔧 Kako da izbegnete kvar i nepotrebne troškove
 
